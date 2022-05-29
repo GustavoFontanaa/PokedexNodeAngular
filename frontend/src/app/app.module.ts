@@ -6,17 +6,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
+import { MainComponent } from './main/main.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PokedexComponent } from './pokedex/pokedex.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PokemonListComponent
+    PokemonListComponent,
+    MainComponent,
+    RegisterComponent,
+    LoginComponent,
+    PokedexComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
