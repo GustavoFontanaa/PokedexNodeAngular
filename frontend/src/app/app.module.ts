@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PokedexComponent } from './pokedex/pokedex.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,15 +21,17 @@ import { PokedexComponent } from './pokedex/pokedex.component';
     MainComponent,
     RegisterComponent,
     LoginComponent,
-    PokedexComponent
+    PokedexComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     NgxPaginationModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

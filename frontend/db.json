@@ -1,0 +1,19 @@
+{
+  "signupUsersList": [
+    {
+      "email": "bolu@gmail.com",
+      "password": "1234",
+      "id": "1"
+    },
+    {
+      "email": "gustavo77@gmail.com",
+      "password": "pizza123",
+      "id": "H_AqgvK"
+    },
+    {
+      "email": "teste",
+      "password": "teste",
+      "id": "uQZmiQs"
+    }
+  ]
+}
