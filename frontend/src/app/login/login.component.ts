@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.formbuilder.group({
-      email: [''],
+      user: [''],
       password: ['', Validators.required],
     });
   }
@@ -29,14 +29,14 @@ export class LoginComponent implements OnInit {
       (res) => {
         const user = res.find((a: any) => {
           return (
-            a.email === this.loginForm.value.email &&
+            a.usuario === this.loginForm.value.usuario &&
             a.password === this.loginForm.value.password
           );
         });
         if (user) {
           alert('Login Succesful');
           this.loginForm.reset();
-          this.router.navigate(['main']);
+          this.router.navigate(['pokedex']);
         } else {
           alert('user not found');
         }

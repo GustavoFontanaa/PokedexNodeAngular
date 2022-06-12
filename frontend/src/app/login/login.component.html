@@ -1,14 +1,17 @@
-<div class="auth-container">
-  <form [formGroup]="loginForm" (ngSubmit)="login()">
-    <div class="form-control">
-      <label for="email">Email</label>
-      <input formControlName="email" type="email" placeholder="Digite o seu e-mail" required>
-      <label for="password">Senha</label>
-      <input formControlName="password" type="password" placeholder="Digite a sua senha" required>
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <h1>Entrar</h1>
+  <div class="inset">
+    <div>
+      <label for="user">Usuário</label>
+      <input type="text" formControlName="user" placeholder="Informe seu nome de usuário">
     </div>
-    <input type="submit" value="Entrar">
-    <p>Não tem conta?
-      <a routerLink="/register">Cadastrar</a>
-    </p>
-  </form>
-</div>
+    <div>
+      <label for="password">Senha</label>
+      <input type="password" formControlName="password" placeholder="Informe a sua senha">
+    </div>
+    <input class="btn" type="submit" value="Entrar"> <br> <br> <br>
+    <div class="position-absolute bottom-0">
+      <p>Não tem conta? <a class="btn btn-dark btn-sm" routerLink="/register">Cadastrar</a> </p>
+    </div>
+  </div>
+</form>

@@ -20,7 +20,7 @@ export class PokemonListComponent implements OnInit {
   // Pegar Pokemon
   getPokemons() {
     this.dataService
-      .getPokemons(10, this.page + 0)
+      .getPokemons()
       .subscribe((response: any) => {
         this.totalPokemons = response.count;
         response.results.forEach((result: any) => {

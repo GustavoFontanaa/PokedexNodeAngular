@@ -1,12 +1,35 @@
-/* Pokemon Grid */
-.pokemon-grid {
-  display: grid;
-  grid-gap: 16px;
-  padding: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+
+#logo img {
+  height: 45px;
 }
 
-.pokemon-grid .box{
+.pokemon-grid {
+  display: grid;
+  width: 12rem auto;
+  background: #444;
+  color: #e4c439;
+  padding: 1rem;
+  border-radius: 10px;
+  border-top: 0.5px solid #cebf7b;
+  border-bottom: 0.5px solid #cebf7b;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caveat", cursive;
+}
+
+.pokemon-grid .box:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-grid .box {
   width: 100%;
   height: 300px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
@@ -20,10 +43,15 @@
   margin: 0 auto;
 }
 
-pagination-controls {
-  text-align: center;
-}
-
 .pokemon-grid .box h3 {
   text-transform: uppercase;
+}
+
+.pokemon-grid .box p {
+  font-size: 19px;
+}
+
+pagination-controls {
+  text-align: center;
+  color: black;
 }

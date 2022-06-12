@@ -1,10 +1,37 @@
-header {
-  padding: 20px 0px;
-  text-align: center;
-  background-color: seagreen;
+/* NAVBAR */
+#logo img {
+  height: 45px;
+  position: relative;
+  top: 12px;
 }
-header h1 {
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 3px;
+
+nav {
+  justify-content: flex-end;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  border-bottom: 1px solid;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #fff;
+}
+
+nav ul li a:hover {
+  color: #e1e0dd;
 }
