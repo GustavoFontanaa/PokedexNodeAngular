@@ -1,0 +1,9 @@
+{
+  "signupUsersList": [
+    {
+      "id": 1,
+      "user": "root",
+      "password": "root"
+    }
+  ]
+}
