@@ -1,10 +1,10 @@
-import { PokedexComponent } from './pokedex/pokedex.component';
 import { RegisterComponent } from './register/register.component';
 import { MainComponent } from './main/main.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 
 const routes: Routes = [
   {
@@ -25,7 +25,7 @@ const routes: Routes = [
       },
       {
         path: 'pokedex',
-        component: PokedexComponent,
+        component: PokemonListComponent,
       },
 
 

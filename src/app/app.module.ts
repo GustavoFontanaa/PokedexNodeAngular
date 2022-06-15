@@ -10,7 +10,6 @@ import { MainComponent } from './main/main.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
-import { PokedexComponent } from './pokedex/pokedex.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -20,8 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PokemonListComponent,
     MainComponent,
     RegisterComponent,
-    LoginComponent,
-    PokedexComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
